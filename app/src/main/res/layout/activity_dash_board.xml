@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DFF2F4"
+    tools:context=".DashBoard">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:background="#50C2C9">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/shape"/>
+
+      <ImageView
+          android:id="@+id/people"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/people"
+          android:layout_centerInParent="true"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Welcome Niru Kumbhani"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/people"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:textSize="20dp"
+          android:layout_marginTop="10dp"/>
+
+  </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good Afternoon"
+        android:layout_gravity="end"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/watch"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+        <ListView
+            android:id="@+id/ListView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/idEdtItemTask"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:id="@+id/idEdtItemTask"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/Add"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:background="@drawable/text_field_2"
+            android:hint="Enter task"/>
+
+        <TextView
+            android:id="@+id/Add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:background="@drawable/next_button"
+            android:text="Add"/>
+
+</LinearLayout>

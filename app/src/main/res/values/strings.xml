@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Task_Management</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="get_started">Get Started</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="enter_your_email">Enter your Email</string>
+</resources>
